@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the file hosted on your server, -->
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+
+    <!-- or the one installed in node_modules directory, -->
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+<body>
+    
+    <div id="image-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="https://dummyimage.com/600x400/000/fff.png">
+                </li>
+                <li class="splide__slide">
+                    <img src="https://dummyimage.com/600x400/000/fff.png">
+                </li>
+                <li class="splide__slide">
+                    <img src="https://dummyimage.com/600x400/000/fff.png">
+                </li>
+                <li class="splide__slide">
+                    <img src="https://dummyimage.com/600x400/000/fff.png">
+                </li> 
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#image-slider' ).mount();
+    } );
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</body>
+</html>
